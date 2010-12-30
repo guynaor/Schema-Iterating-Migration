@@ -1,0 +1,10 @@
+Description:
+    This generates a migration file for multi-tenant/multi-schema based application.
+    Use this generator insstead of the usual script/generate model MyModelName field1:string field2:integer.
+    The migration file will be created in db/migrate/schema_iterating_migration instead of the usual db/migrate.
+
+Example:
+    ./script/generate model_schema_iterating_migration User username:string
+
+    This will create:
+		db/migrate/schema_iterating_migration/XXXXXXXXXXXXXX_create_users.rb
